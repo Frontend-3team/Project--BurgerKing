@@ -1,0 +1,237 @@
+/* footer_wrap start */
+
+#footer_wrap {
+    /* position */
+    /* left: 0;
+    right: 0;
+    bottom: 0; */
+    background-color: var(--dark-brown);
+    color: white;
+    height: 680px;
+    flex-wrap: nowrap;
+}
+
+.fmob_menu {
+    display: none;
+}
+
+.fbottom_left {
+    display: none;
+}
+
+#fmob_last {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .web {
+        display: none;
+    }
+
+    #footer_wrap {
+        background-color: var(--dark-brown);
+        height: 350px;
+        flex-wrap: nowrap;
+        color: #bba391;
+        /* position: relative;
+        max-width: 1144px;
+        border-top: 5px solid black;
+        color: #bba391; */
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .fweb_container {
+        position: relative;
+        max-width: 1144px;
+        border-top: 5px solid #bba391;
+        color: #bba391;
+    }
+
+    .fweb_padding {
+        padding: 35px 15px;
+    }
+
+    .fmob_menu {
+        display: block;
+        position: static;
+    }
+
+    .fmob_menu ul {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+
+    .fomb_menu a {
+        position: relative;
+        padding: 5px 0px;
+        color: #bba391;
+    }
+
+    .fmob_menu ul li a::before {
+        content: '|';
+        width: 1px;
+        height: 5px;
+        color: #8f7f7253;
+        padding-right: 50px;
+    }
+
+    .fbottom_left {
+        display: block;
+        color: #bba391;
+        padding-left: 15px;
+    }
+    
+    #fmob_last {
+        padding-top: 20px;
+        display:flex;
+        justify-content: end;
+    }
+
+    #fmob_last .btn {
+        font-family: 'Nanum Gothic', sans-serif;
+        color: #f5ebdc;
+        border: 1px solid #bba39180;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 6.5px 20px;
+        background-color: transparent;
+        letter-spacing: 0.5px;
+        /* opacity:1; */
+        transition: all 0.4s;
+    }
+    
+
+}
+
+#footer_wrap .web {
+    font-family: 'KCC-Ganpan';
+    max-width: 1184px;
+    padding: 47px 270px 18px;
+    height: 320px;
+}
+
+#footer_wrap .web .menu {
+    display: flex;
+    float: left;
+}
+
+#footer_wrap .web .menu a > span {
+    height: 28px;
+    font-size: 27px;
+    color: #f5ebdc;
+}
+
+ul {
+    display: block;
+}
+
+#footer_wrap ul.dom {
+    width: 100%;
+    padding-right: 200px;
+    margin: 18px 0px;
+}
+
+#footer_wrap .dom > li {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #bba391;
+    padding: 8px 0px;
+}
+
+#footer_wrap .web .menu .sub {
+    width: 230px;
+}
+
+#footer_wrap ul.sub {
+    margin: 18px 0px;
+}
+
+#footer_wrap .sub > li {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #bba391;
+    padding: 8px 0px;
+}
+
+/* footer start */
+
+.footer {
+    position: relative;
+    font-size: 0.875rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 272px;
+}
+
+.footer #bottom {
+    position: relative;
+    max-width: 1144px;
+    padding: 47px 0;
+    border-top: 1px solid #bba391;
+    color: #bba391;
+    margin: 0 auto;
+}
+
+.bottom_left {
+    justify-content: flex-start;
+}
+
+.bottom_left > p {
+    margin: 12px 0px;
+    padding: 10px 0px;
+    line-height: 18pt;
+    color: #bba391;
+}
+
+.footer ul.icon {
+    display: flex;
+}
+
+.footer .bottom_right {
+    justify-content: flex-end;
+    margin-left: 420px;
+    position: absolute;
+    top: 42px;
+    right: 0;
+}
+
+.bottom_right ul {
+    display: flex;
+}
+
+.bottom_right ul li {
+    color: #bba391;
+}
+
+.bottom_right ul > p {
+    font-size: 12px;
+    padding: 0px 8px;
+    color: #8f7f723b;
+}
+
+#last {
+    margin-top: 20px;
+    padding-top: 30px 30px;
+}
+
+#last .btn {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #f5ebdc;
+    border: 1px solid #bba39180;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6.5px 30px;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+    /* opacity:1; */
+    transition: all 0.4s;
+}

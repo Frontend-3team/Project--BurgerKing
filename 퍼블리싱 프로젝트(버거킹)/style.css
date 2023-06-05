@@ -1,0 +1,191 @@
+:root {
+    --orange-red: #d62300; /*오렌지레드*/
+    --beige: #f2ebe6; /*화이트베이지*/
+    --dark-brown: #2b0200; /*고동색. 제일 진한 갈색입니다*/
+    --brown: #502314; /*붉은 끼 도는 갈색*/
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    /* color: #000; */
+}
+
+body {
+    background-color: #f2ebe6;
+    display: block;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 120px 0 680px;
+    min-height: 450px;
+    height: 1868px;
+}
+
+main .slide {
+    margin: 0 120px;
+}
+
+main .video {
+    margin: 0px 120px;
+}
+
+/* sns */
+
+main .sns {
+    background-color: #683a2f;
+    height: 80px;
+    margin: 0 120px;
+    max-width: 1440px;
+    padding: 40px 230px;
+}
+
+main .sns ul {
+    display: flex;
+    float: left;
+    height: 100%;
+}
+
+main .sns ul li {
+    display: flex;
+    color: white;
+    margin-right: 170px;
+}
+
+.sns ul li:nth-child(2) {
+    width: 100%;
+}
+
+main button {
+    margin-top: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 3px;
+    border: none;
+    color: #2e2e2e;
+    height: 26px;
+}
+
+.sns_wrap {
+    margin-top: 4px;
+    padding-left: 12px;
+    width: 100%;
+}
+
+/* guide */
+
+main .guide {
+    margin: 0 120px;
+    display: flex;
+}
+
+main .guide .app {
+    background-color: #c7a186;
+}
+
+main .guide .delivery {
+    background-color: #b08972;
+}
+
+/* search */
+
+main .search {
+    margin: 0 120px;
+    background: #fff;
+    padding: 100px 20px 88px;
+    height: 430px;
+}
+
+main .search h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 14px;
+}
+
+main .search p {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+main .search button {
+    font-size: 28px;
+    margin-left: 45%;
+    margin-top: 36px;
+}
+
+main .shop {
+    background-color: var(--orange-red);
+    color: #fff;
+    font-family: 'KCC-Ganpan';
+    font-size: 24px;
+    border-radius: 25px;
+    border: none;
+    padding: 3px 20px;
+    height: 50px;
+}
+
+main .search ul {
+    display: flex;
+    float: left;
+    align-items: center;
+    padding-top: 80px;
+    margin-left: 10%;
+}
+
+main .search ul li {
+    border-left: 1px solid #ededed;
+    padding: 0px 30px;
+    width: 130px;
+    line-height: 134%;
+    text-align: center;
+}
+
+main .search ul li p {
+    font-size: 1.125rem;
+}
+
+main .search ul li strong {
+    color: var(--orange-red);
+    font-size: 20px;
+}
+
+main .home_call {
+    background: url(./img/www_burgerking_co_kr/bg_home_cs.40b21d3f.png);
+    color: white;
+    height: 200px;
+    margin: 0 120px;
+    padding: 0 150px;
+}
+
+main .home_call h2 {
+    font-size: 36px;
+    padding: 50px 0 20px;
+}
+
+main .home_call p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+main .home_call .call {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding-right: 250px;
+    margin-top: -50px;
+}
+
+main .home_call .call strong {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 0px 20px;
+}
