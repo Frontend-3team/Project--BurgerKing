@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+
+* {
+    font-family: 'KCC-Ganpan';
+}
+
+
+/* @media screen and (max-width: 1280px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas:
+            'a b'
+            'c d'
+            'e e';
+    } */
+
+
+/* @media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd'
+            'e';
+    }
+} */
