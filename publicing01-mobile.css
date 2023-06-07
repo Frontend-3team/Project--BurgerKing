@@ -1,0 +1,295 @@
+@media screen and (max-width: 768px) {
+
+    body{
+        padding-top: 52px;
+        min-width: 450px;
+    }
+
+    .container{
+        max-width: 768px;
+        margin: 0;
+    }
+
+    header{
+        height: 56px;
+        padding: 12px;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .headerbottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header button{
+        display: none;
+    }
+    
+    .headertop-menu{
+       display: none;
+    }
+    
+    .headerbottom > h1 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .headerbottom > h1 > img{
+        height: 32px;
+    }
+
+    /**-----------------------body------------------------**/
+
+    .maintop { 
+        display: none;
+        padding: 0;
+    }
+
+    /*-----------------------------main top----------------------------*/
+
+    .maintitle{
+        max-width: 768px;
+    }
+
+    .maintitle h1{
+        font-size: 20px;
+    }
+
+    #mainwrap{
+        padding-top: 12px;
+    }
+
+    .loginwrap{
+        padding: 0;
+    }
+
+    .content1{
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .content1 input{
+        max-width: 100%;
+        height: 24px;
+        font-size: 16px;
+        border: 0;
+        padding-bottom: 12px;
+        margin-top: 24px;
+        background-image: url(./img/boxline.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+
+    .logintitle{
+        font-size: 12px;
+    }
+
+    .logintitle > img{
+        height: 24px;
+    }
+
+    .nomarllogin{
+        border : 0;
+        padding : 0;
+        margin: 0 24px 28px 24px;
+    }
+
+    .input-login{
+        background-repeat: repeat-x;
+    }
+
+    .input-login > img{
+        bottom: 12px;
+    }
+
+    .loginbutton button{
+        width: 50%;
+        height: 48px;
+        border: 0;
+        border-radius: .5rem;
+        font-size: 24px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .findid{
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .snslogin{
+        padding : 36px 24px 32px 24px;
+        margin: 0;
+        background-color: var(--beige);
+    }
+
+    .snslogin > .loginwrap{
+        display: grid;
+        grid-template:
+        "naver kakao"
+        "apple .";
+        grid-column-gap: 12px;
+        max-width: 768px;
+        min-width: 450px;
+    }
+
+    .snslogin a{
+        margin-bottom: 4px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .snslogin a span{
+        font-size: 16px;
+    }
+
+    .snslogin a:nth-of-type(1){
+        grid-area: naver;
+    }
+
+    .snslogin a:nth-of-type(2){
+        grid-area: kakao;
+    }
+
+    .snslogin a:nth-of-type(3){
+        grid-area: apple;
+    }
+
+    /*-----------------------------main bottom----------------------------*/
+
+    .content2{
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-width: 450px;
+    }
+
+    input[type="radio"] + label{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        padding: 0;
+        margin: 0;
+    }
+
+    .con1 p{
+        text-align: center;
+        font-size: 20px;
+        padding: 12px 20px 48px 20px;
+    }
+
+    .tabcontent-btn button {
+        margin: 0;
+        padding: 8px 32px;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .tab02-box-btn button {
+        padding: 8px 32px;
+        font-size: 20px;
+        margin-bottom: 24px;
+    
+    }
+
+    .con2{
+        background-color: #f8f8f8;
+    }
+
+    .con2-box{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        margin: 0 12px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .con2-box p:nth-of-type(2) {
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .con2-box input {
+        background: url(./img/boxline.png)  bottom;
+        background-repeat: repeat-x;
+        padding-bottom: 16px;
+        margin: 0;
+        height: auto;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .con2-box input::placeholder{
+        font-size: 16px;
+      }
+
+/*-----------------------------footer----------------------------*/
+
+    footer {
+        background-color: var(--dark-brown);
+    }
+
+    .top {
+        display: none;
+    }
+
+    .bottom{
+        padding: 35px 16px;
+    }
+
+    .footer_menu{
+        position: relative;
+        top: 4px;
+    }
+
+    .footer_menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .footer_button{
+        margin: 14px 8px;  
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+
+    .footer_button > a {
+        height: 30px;
+        padding: 0px 18px;
+        margin-left: 4px;
+    }
+
+    .burgerkingpng{
+        margin: 30px 0px 17px;
+    }
+
+    .footersns > a{
+        width: 16px;
+        height: 16px;
+        background-size: 100%;
+    }
+
+
+
+
+}
