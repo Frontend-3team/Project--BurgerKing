@@ -43,6 +43,7 @@ main {
 }
 .menu-header > .left > span > i {
   color: #fff;
+  /* font-size: 33px; */
 }
 .menu-header span {
   margin-right: 10px;
@@ -68,7 +69,9 @@ main {
   align-items: center;
   justify-content: space-around;
 }
-
+.main-img .ad-img > .img-box > .text {
+  margin-right: 150px;
+}
 .main-img .ad-img > .img-box > .text > h2 {
   font-size: 3.5rem;
   color: #fff;
@@ -130,86 +133,6 @@ main {
   line-height: 20px;
 }
 
-/* <!-- content --> */
-.content {
-  text-align: center;
-  padding: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contentbox {
-  border-right: 1px solid #f2ebe6;
-}
-.contentbox:last-of-type {
-  border: none;
-}
-
-.content > .contentbox > img {
-  width: 300px;
-}
-.content > .contentbox h4 {
-  font-size: 1.8rem;
-  width: 300px;
-  margin: 0 auto;
-  /* background-color: aqua; */
-}
-.content > .contentbox p {
-  font-size: 18px;
-  padding: 20px;
-  width: 450px;
-  /* margin: 0 auto; */
-}
-
-/* .bottom-slide */
-.bottom-slide {
-  width: 100%;
-  background-color: #f2ebe6;
-  padding: 70px 0;
-}
-.bottom-slide h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 60px;
-}
-.bottom-slide > .slide {
-  margin-bottom: 30px;
-  width: 100%;
-  margin: 0 auto;
-}
-.bottom-slide > .slide > ul {
-  /********slide할것***********/
-  text-align: center;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  padding: 0 100px;
-}
-.bottom-slide > .slide > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-/********slide할것***********/
-
-.bottom-slide > .slide > ul > li > a > p {
-  color: #000;
-}
-
-.bottom-slide > .slide > ul > li > a > img {
-  width: 220px;
-}
-
-/* top-arrow */
-main > .top-arrow {
-  position: fixed;
-  right: 35px;
-  top: 50%;
-}
-
 @media screen and (max-width: 768px) {
   .menu-header {
     display: none;
@@ -223,7 +146,9 @@ main > .top-arrow {
     padding: 0 10px;
     width: 100%;
   }
-
+  .main-img .ad-img > .img-box > .text {
+    margin-right: 0;
+  }
   .main-img .ad-img > .img-box > .text > h2 {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -267,70 +192,5 @@ main > .top-arrow {
   }
   .ad-button > .button-box > .right > a > button > span > img {
     width: 15px;
-  }
-  /* <!-- content --> */
-  .content {
-    display: block;
-    margin: 15px;
-    padding: 0;
-  }
-  /* .content > .contentbox {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: aqua;
-  } */
-
-  .contentbox {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 10px 20px 30px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-
-  .content > .contentbox > img {
-    width: 120px;
-    position: absolute;
-    right: 15px;
-    padding-top: 15px;
-  }
-  .content > .contentbox span {
-    text-align: left;
-    /* background-color: aqua; */
-    margin: 0;
-  }
-  .content > .contentbox h4 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  .content > .contentbox p {
-    font-size: 12px;
-    padding: 0;
-  }
-
-  /* .bottom-slide */
-
-  .bottom-slide h3 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  .bottom-slide > .slide {
-    width: 100%;
-  }
-  /********slide할것***********/
-  .bottom-slide > .slide > ul {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .bottom-slide > .slide > ul > li {
-    white-space: nowrap;
-  }
-  .bottom-slide > .slide > ul > li > a > img {
-    width: 150px;
   }
 }
