@@ -103,6 +103,7 @@ main .slide > img{
 .web {
     display: flex;
     border: none;
+    width: 100%;
 }
 
 .web img{
@@ -120,6 +121,7 @@ main .slide > img{
 
 
 .shop {
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 88px;
     background-color: #fff;
