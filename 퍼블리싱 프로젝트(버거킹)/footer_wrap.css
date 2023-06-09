@@ -84,10 +84,10 @@
         color: #bba391;
         padding-left: 15px;
     }
-    
+
     #fmob_last {
         padding-top: 20px;
-        display:flex;
+        display: flex;
         justify-content: end;
     }
 
@@ -104,8 +104,6 @@
         /* opacity:1; */
         transition: all 0.4s;
     }
-    
-
 }
 
 #footer_wrap .web {
@@ -190,6 +188,8 @@ ul {
     line-height: 18pt;
     color: #bba391;
 }
+
+/* display: flex;가 왜 모바일에선 먹지않나요??????? */
 
 .footer ul.icon {
     display: flex;

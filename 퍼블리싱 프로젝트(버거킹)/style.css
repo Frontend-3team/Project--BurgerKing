@@ -17,15 +17,16 @@ body {
 }
 
 main {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 120px 0 680px;
-    min-height: 450px;
-    height: 1868px;
+    padding: 120px 0px 0px;
 }
 
 main .slide {
-    margin: 0 120px;
+    margin: 0px 120px;
+    position: relative;
+}
+
+main .m_slide {
+    display: none;
 }
 
 main .video {
@@ -35,27 +36,33 @@ main .video {
 /* sns */
 
 main .sns {
+    overflow: hidden;
     background-color: #683a2f;
-    height: 80px;
-    margin: 0 120px;
+    height: 100%;
+    margin: 0px 120px;
     max-width: 1440px;
     padding: 40px 230px;
 }
 
 main .sns ul {
     display: flex;
-    float: left;
+    position: relative;
     height: 100%;
+    width: 100%;
 }
 
 main .sns ul li {
     display: flex;
     color: white;
-    margin-right: 170px;
+    padding-right: 170px;
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 33%;
 }
 
 .sns ul li:nth-child(2) {
-    width: 100%;
+    min-width: 23%;
 }
 
 main button {
@@ -72,13 +79,93 @@ main button {
 .sns_wrap {
     margin-top: 4px;
     padding-left: 12px;
-    width: 100%;
+}
+
+.sns_wrap strong {
+    font-size: 1.45rem;
+    height: 20px;
+}
+
+.sns_wrap .status {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+/* m미디어 쿼리 */
+
+@media (max-height: 500px) and (orientation: landscape), screen and (max-width: 768px) and (orientation: portrait) {
+    main {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 8%;
+    }
+
+    main .slide {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main .m_slide {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main .video {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main .sns {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: #683a2f;
+        margin: 0px;
+        padding: 40px 0px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .sns ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    main .sns ul li {
+        display: block;
+        float: left;
+        padding: 10px 0px;
+        position: relative;
+        width: 33%;
+        height: 100%;
+    }
+
+    main .sns ul li img {
+        width: 50px;
+        padding-left: 10px;
+    }
+
+    .sns_wrap strong {
+        font-size: 16px;
+    }
+
+    .sns_wrap .status img {
+        width: 10px;
+    }
+
+    .sns_wrap .status {
+        font-size: 5px;
+        color: #000;
+    }
 }
 
 /* guide */
 
 main .guide {
-    margin: 0 120px;
+    margin: 0px 120px;
     display: flex;
 }
 
@@ -90,10 +177,27 @@ main .guide .delivery {
     background-color: #b08972;
 }
 
+main .guide img:hover {
+    cursor: pointer;
+}
+
+@media (max-height: 500px) and (orientation: landscape), screen and (max-width: 768px) and (orientation: portrait) {
+    main .guide {
+        margin: 0px;
+    }
+
+    main .guide .app {
+        width: 100%;
+    }
+    main .guide .delivery {
+        width: 50%;
+    }
+}
+
 /* search */
 
 main .search {
-    margin: 0 120px;
+    margin: 0px 120px;
     background: #fff;
     padding: 100px 20px 88px;
     height: 430px;
@@ -157,6 +261,68 @@ main .search ul li strong {
     font-size: 20px;
 }
 
+@media (max-height: 500px) and (orientation: landscape), screen and (max-width: 768px) and (orientation: portrait) {
+    main .search {
+        margin: 0px;
+        padding: 20px 0px 0px;
+        background: #fff;
+        height: 400px;
+    }
+
+    main .search h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    main .search p {
+        font-size: 1rem;
+    }
+
+    main .search button {
+        align-self: center;
+        margin-left: 36%;
+    }
+
+    main .search .shop {
+        background-color: var(--orange-red);
+        color: #fff;
+        font-family: 'KCC-Ganpan';
+        font-size: 1.5rem;
+        border-radius: 25px;
+        border-left: none;
+        padding: 3px 50px;
+        height: 40px;
+    }
+
+    main .search ul {
+        display: block;
+        padding: 0px;
+    }
+
+    main .search ul li {
+        float: left;
+        width: 33%;
+        border-left: none;
+        padding: 50px 0px 0px;
+        line-height: 110%;
+    }
+
+    main .search ul li img {
+        width: 28%;
+    }
+
+    main .search ul li p {
+        display: none;
+    }
+
+    main .search ul li strong {
+        display: block;
+        font-size: 1rem;
+    }
+}
+
+/* 집만버 */
+
 main .home_call {
     background: url(./img/www_burgerking_co_kr/bg_home_cs.40b21d3f.png);
     color: white;
@@ -188,4 +354,48 @@ main .home_call .call strong {
     font-size: 44px;
     font-weight: bold;
     padding: 0px 20px;
+}
+
+main .home_call .call img {
+    height: 50px;
+}
+
+main .home_call .mp {
+    display: none;
+}
+
+@media (max-height: 500px) and (orientation: landscape), screen and (max-width: 768px) and (orientation: portrait) {
+    main .home_call {
+        margin: 0px;
+        padding: 0px 25px;
+    }
+
+    main .home_call h2 {
+        font-size: 1.3rem;
+        padding: 30px 0px 10px;
+    }
+
+    main .home_call p {
+        display: none;
+    }
+
+    main .home_call .mp {
+        display: block;
+        font-size: 0.75rem;
+    }
+
+    main .home_call .call img {
+        height: 26px;
+    }
+
+    main .home_call .call {
+        padding: 40px 0px 0px 30px;
+        margin: 0px;
+        position: absolute;
+        left: 0;
+    }
+
+    main .home_call .call strong {
+        font-size: 2.4rem;
+    }
 }
