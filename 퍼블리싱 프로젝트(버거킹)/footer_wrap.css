@@ -1,10 +1,6 @@
 /* footer_wrap start */
 
 #footer_wrap {
-    /* position */
-    /* left: 0;
-    right: 0;
-    bottom: 0; */
     background-color: var(--dark-brown);
     color: white;
     height: 680px;
