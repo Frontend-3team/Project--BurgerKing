@@ -1,0 +1,379 @@
+main{
+    padding: 120px 50px 0;
+}
+
+main .slide > img{
+    display: block;
+    margin: auto;
+
+}
+
+.movie{
+    position: relative;
+    max-width: 14400px;
+    margin: 0 auto;
+}
+
+#frame{
+    display: block;
+    max-width: 14400px;
+    margin: 0 auto;
+}
+
+.sns{
+    width: 100%;
+    height: 160px;
+    background-color: #683a2f;
+    position: relative;
+    padding: 0 148px;
+    display: flex;
+}
+
+.snslist{
+    width: 33%;
+    min-width: 280px;
+    height: 100%;
+    position: relative;
+}
+
+.snslist > .youtube{
+    min-width: 180px;
+    height: 94px;
+    background-image: url(./img/youtube.png);
+    background-repeat: no-repeat;
+    padding: auto;
+    position: absolute;
+    top: 22%;
+    left: 17%;
+    padding: 10px 10px 10px 105px;
+}
+
+.snslist > .facebk{
+    min-width: 180px;
+    height: 94px;
+    background-image: url(./img/facebk.png);
+    background-repeat: no-repeat;
+    padding: auto;
+    position: absolute;
+    top: 22%;
+    left: 17%;
+    padding: 10px 10px 10px 105px;
+}
+
+.snslist > .insta{
+    min-width: 180px;
+    height: 94px;
+    background-image: url(./img/insta.png);
+    background-repeat: no-repeat;
+    padding: auto;
+    position: absolute;
+    top: 22%;
+    left: 17%;
+    padding: 10px 10px 10px 105px;
+}
+
+.sns .snsname{
+    color: #fff;
+    font-size: 1.25em;
+    display: block;
+    font-weight: 400;
+}
+
+.stat {
+    background-image: url(./img/miniyoutube.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    font-size: 12px;
+    background-color: #fff;
+    height: 26px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px 9px 0 33px;
+
+}
+
+.like{
+    background-image: url(./img/like.png);
+}
+
+.follower{
+    background-image: url(./img/follower.png);
+}
+
+.web {
+    display: flex;
+    border: none;
+    width: 100%;
+}
+
+.web img{
+    width: 100%;
+}
+
+.app {
+    background-color: #c7a186;
+}
+
+.delivery{
+    background-color: #b08972;
+}
+
+
+
+.shop {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 88px;
+    background-color: #fff;
+    padding-left: 148px;
+    padding-right: 148px;
+    max-width: 1440px;
+    min-width: 1024px;
+}
+
+.shop .shopsearch {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.shop > p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.shop > .shop_button {
+    margin: 35px 0 55px;
+    text-align: center;
+}
+
+.shop > .shop_button >a{
+    background-color: #d72300;
+    border-radius: 25px;
+    border: 1px solid #d72300;
+    width: 140px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 46px;
+}
+
+.shop > ul {
+    height: 180px;
+}
+
+.shop > ul > li{
+    float: left;
+    width: 16.6%;
+    border-left: 1px solid #ededed;
+    text-align: center;
+    min-width: 120px;
+}
+
+.shop > ul > li > img{
+    display: block;
+    margin: auto;
+}
+
+.shop > ul > li:nth-child(1){
+    border: none;
+}
+
+.shop > ul > li > em{
+    display: block;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: #e22219;
+}
+
+.phone {
+    background-image: url(./img/phone.png);
+    background-repeat: no-repeat;
+    padding: 50px 148px ;
+    position: relative;
+    min-width: 1100px;
+}
+
+.phone h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.phone p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.phone .phtextbr{
+    display: none!important;
+}
+
+.number {
+    position: absolute;
+    right: 148px;
+    top: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.number span {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.mangomedia{
+    display: none;
+}
+
+@media screen and (max-width : 768px){
+    main{
+        padding: 58px 0 0;
+    }
+
+    .slide{
+        display: none;
+    }
+
+    .mangomedia{
+        display: block;
+    }
+
+    .movie iframe{
+        height: 580px;
+    }
+
+    .sns{
+        height: 190px;
+        padding: 0;
+    }
+
+    .snslist{
+        width: 33%;
+        min-width: 120px;
+    }
+
+    .snslist > .youtube{
+        min-width: 80px;
+        background-size: 50px;
+        background-position: 50% 0;
+        padding: 55px 0;
+        left: 30%;
+    }
+
+    .snslist > .facebk{
+        min-width: 80px;
+        background-size: 50px;
+        background-position: 50% 0;
+        padding: 55px 0;
+        left: 30%;
+    }
+
+    .snslist > .insta{
+        min-width: 80px;
+        background-size: 50px;
+        background-position: 50% 0;
+        padding: 55px 0;
+        left: 30%;
+    }
+
+    .snslist strong{
+        text-align: center;
+    }
+
+    .snslist .snsname{
+        font-size: 1rem;
+        padding: auto;
+    }
+
+    .snslist .stat {
+        font-size: 10px;
+    }
+
+    .shop {
+        padding: 20px 0 58px 0;
+        min-width: 480px;
+    }
+
+    .shop .shopsearch{
+        font-size: 28px;
+    }
+
+    .shop p{
+        font-size: 12px;
+    }
+
+    .shop > .shop_button {
+        margin: 20px 0 0px;
+        text-align: center;
+    }
+
+    .shop > .shop_button > a{
+        width: 160px;
+        height: 32px;
+        border-radius: 16px;
+        line-height: 28px;
+        font-size: 1.25rem;
+    }
+
+    .shop > ul > li{
+        width: 33%;
+        border: none;
+        margin-top: 36px;
+    }
+
+    .shop > ul > li > img{
+        width: 50px;
+    }
+
+    .shop > ul > li > span {
+        display: none;
+    }
+
+    .shop > ul > li > em{
+        font-size: 1rem;
+    }
+
+    .phone{
+        padding: 29px 16px 16px 24px;
+        min-width: 0;
+    }
+
+    .phone > h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .phone > .phtext {
+        display: none!important;
+    }
+
+    .phone > .phtextbr {
+        display: block!important;
+        font-size: 12px;
+    }
+
+    .number{
+        position: static;
+        margin: 32px 0 0 -4px;
+    }
+
+    .number > img{
+        width: 24px;
+    }
+
+    .number span{
+        font-size: 32px;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1280px){
+    main{
+        padding: 58px 0 0;
+    }
+}

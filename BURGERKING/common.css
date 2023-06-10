@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+* {
+    font-family: 'KCC-Ganpan';
+}
+
+
+
+:root{
+    --orange-red: #D62300; /*오렌지레드*/
+    --beige: #F5EBDC;  /*화이트베이지*/
+    --dark-brown: #2B0200; /*고동색. 제일 진한 갈색입니다*/
+    --brown: #502314; /*붉은 끼 도는 갈색*/
+}
+
+main {
+    background-color: var(--beige);
+}
